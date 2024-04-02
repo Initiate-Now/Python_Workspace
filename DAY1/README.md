@@ -1,11 +1,9 @@
-# Python program to interchange first and last elements in a list
+# DAY1
 
-Given a list, write a Python program to swap first and last element of the list.
+## Python program to interchange first and last elements in a list by swaping the first element with (n-1)th element.
 
-Examples: 
-
-Input : [12, 35, 9, 56, 24]
-Output : [24, 35, 9, 56, 12]
-
-Input : [1, 2, 3]
-Output : [3, 2, 1]
+### Points Covered in this Code
+- Variable declaration and definition.
+- Indexing.
+- print statement.
+- multi-line and single line comments.
