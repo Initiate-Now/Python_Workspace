@@ -12,6 +12,7 @@ A Python-based Serial Port Terminal application for communicating with embedded 
 * Save communication logs to a file
 * Clear terminal output
 * Cross-platform support (Windows/Linux)
+
 ## Applications
 
 **This project is useful for:**
@@ -22,7 +23,11 @@ A Python-based Serial Port Terminal application for communicating with embedded 
 * Sensor data monitoring
 * Bootloader communication
 * Learning serial communication concepts
+
 # Technologies Used
 * Python 3.x
 * PySerial
 * Tkinter (optional GUI version)
+
+## Required Packages
+    Pyserial
