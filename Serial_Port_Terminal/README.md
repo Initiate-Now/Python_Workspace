@@ -31,3 +31,17 @@ A Python-based Serial Port Terminal application for communicating with embedded 
 
 ## Required Packages
     Pyserial
+
+## Installation
+* To build a serial port terminal in Python, the industry-standard library is `pySerial`.
+
+        pip install pyserial
+
+## To Find Available Serial Ports
+* Run this quick script to find out which COM port (Windows) or tty device (Linux/Mac) your hardware is plugged into:
+
+        import serial.tools.list_ports
+
+        ports = serial.tools.list_ports.comports()
+        for port in ports:
+            print(f"Port: {port.device} | Description: {port.description}")
