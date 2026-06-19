@@ -24,7 +24,7 @@ A Python-based Serial Port Terminal application for communicating with embedded 
 * Bootloader communication
 * Learning serial communication concepts
 
-# Technologies Used
+## Technologies Used
 * Python 3.x
 * PySerial
 * Tkinter (optional GUI version)
@@ -45,3 +45,16 @@ A Python-based Serial Port Terminal application for communicating with embedded 
         ports = serial.tools.list_ports.comports()
         for port in ports:
             print(f"Port: {port.device} | Description: {port.description}")
+
+## Creating the package files
+You will now add files that are used to prepare the project for distribution. When you’re done, the project structure will look like this:
+
+    packaging_tutorial/
+    ├── LICENSE
+    ├── pyproject.toml
+    ├── README.md
+    ├── src/
+    │   └── example_package_YOUR_USERNAME_HERE/
+    │       ├── __init__.py
+    │       └── example.py
+    └── tests/
