@@ -37,6 +37,36 @@ A Python-based Serial Port Terminal application for communicating with embedded 
 
         pip install pyserial
 
+## Create a Desktop Application
+1. Install GUI and packaging libraries:
+
+        pip install pyserial tkinter pyinstaller
+
+2. Build a simple GUI in Python:
+   * Use `tkinter` for a desktop window.
+   * Add controls to select a serial port, configure baud rate, and connect/disconnect.
+   * Use a text widget to display received data and send input commands.
+
+3. Implement serial communication logic:
+   * Use `serial.Serial` for opening the selected port.
+   * Read data on a background thread or use non-blocking I/O.
+   * Append received text to the GUI display with timestamps.
+   * Provide buttons for sending text and saving logs.
+
+4. Run the application locally:
+
+        python your_app.py
+
+5. Package the app into a desktop executable:
+   * Use `pyinstaller` to create a standalone app.
+
+        pyinstaller --onefile --windowed your_app.py
+
+   * Find the executable in the `dist/` folder.
+
+6. Test the packaged application:
+   * Launch the executable and verify serial port detection, connection, data send/receive, and log saving work correctly.
+
 ## To Find Available Serial Ports
 * Run this quick script to find out which COM port (Windows) or tty device (Linux/Mac) your hardware is plugged into:
 
