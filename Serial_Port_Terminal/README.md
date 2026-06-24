@@ -88,3 +88,6 @@ You will now add files that are used to prepare the project for distribution. Wh
     │       ├── __init__.py
     │       └── example.py
     └── tests/
+
+## Testing
+To test this software will use Arduino UART Program.
