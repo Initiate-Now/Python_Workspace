@@ -90,4 +90,34 @@ You will now add files that are used to prepare the project for distribution. Wh
     └── tests/
 
 ## Testing
-To test this software will use Arduino UART Program.
+There are several ways to test the Serial Port Terminal application:
+
+1. Manual hardware test
+   * Connect a serial device, such as an Arduino or microcontroller, to your computer.
+   * Open the correct COM/tty port and set the baud rate, parity, stop bits, and data bits to match the device.
+   * Send commands from the terminal and verify the device responds correctly.
+   * Confirm received data appears in real time and timestamps are logged properly.
+
+2. Loopback test
+   * Connect the serial port TX pin to the RX pin on the same port (or use a loopback adapter).
+   * Open the terminal and send text.
+   * Verify the application receives the same text back, proving send/receive functionality.
+
+3. Software-driven test with a virtual serial port
+   * On Windows, use virtual COM port tools such as com0com.
+   * On Linux, use `socat` or `tty0tty` to create paired virtual serial ports.
+   * Run the terminal on one virtual port and a serial terminal emulator on the other.
+   * Send and receive messages through the paired ports.
+
+4. Automated unit testing
+   * Use `pytest` for Python unit tests if a test suite is available.
+   * Mock `serial.Serial` and `serial.tools.list_ports` to verify port discovery, connection handling, and data processing logic.
+   * Example command:
+
+        pytest
+
+5. Log and error verification
+   * Check saved log files for correct timestamps and complete message content.
+   * Test disconnect and reconnect behavior to ensure the application recovers cleanly.
+
+By combining hardware, loopback, virtual-port, and automated tests, you can validate the terminal across the full serial communication workflow.
