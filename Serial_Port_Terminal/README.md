@@ -121,3 +121,13 @@ There are several ways to test the Serial Port Terminal application:
    * Test disconnect and reconnect behavior to ensure the application recovers cleanly.
 
 By combining hardware, loopback, virtual-port, and automated tests, you can validate the terminal across the full serial communication workflow.
+
+## UML Diagrams
+
+UML diagrams for the Serial Port Terminal are included in the `diagrams` folder. They describe the main classes and the send/receive sequence flow.
+
+- Class & Sequence (PlantUML): [diagrams/serial_port_terminal.puml](diagrams/serial_port_terminal.puml#L1)
+
+To render the diagrams locally, install PlantUML and run:
+
+   plantuml diagrams/serial_port_terminal.puml
