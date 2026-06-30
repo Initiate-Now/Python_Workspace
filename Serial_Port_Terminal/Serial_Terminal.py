@@ -1,3 +1,9 @@
+'''*****************************************************
+* Name    : Serial_Terminal.py
+* Purpose : To create an interactive terminal for serial communication with a device
+* Author  : Navin Chakravarthy Kamalakannan
+*********************************************************'''
+
 import serial
 import threading
 import sys
