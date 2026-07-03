@@ -9,7 +9,7 @@ import threading
 import sys
 
 # Terminal Configurations
-PORT = 'COM4'
+PORT = 'COM3'  # Update this to your serial port
 BAUDRATE = 115200
 
 def read_from_port(ser):
