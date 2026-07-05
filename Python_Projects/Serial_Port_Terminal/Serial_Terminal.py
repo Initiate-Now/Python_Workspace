@@ -1,7 +1,7 @@
 '''*****************************************************
-* Name    : Serial_Terminal.py
-* Purpose : To create an interactive terminal for serial communication with a device
-* Author  : Navin Chakravarthy Kamalakannan
+* Name   : Serial_Terminal.py
+* Purpose: To create an interactive terminal for serial communication with a device
+* Author : Navin Chakravarthy Kamalakannan
 *********************************************************'''
 
 import serial
@@ -9,11 +9,11 @@ import threading
 import sys
 
 # Terminal Configurations
-PORT = 'COM3'  # Update this to your serial port
+PORT = 'COM8'
 BAUDRATE = 115200
 
 def read_from_port(ser):
-    """Continuously monitors and prints incoming data from the serial device."""
+    """ Continuously monitors and prints incoming data from the serial device."""
     while ser.is_open:
         try:
             if ser.in_waiting > 0:
