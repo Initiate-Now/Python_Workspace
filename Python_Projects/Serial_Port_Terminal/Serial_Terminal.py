@@ -9,7 +9,7 @@ import threading
 import sys
 
 # Terminal Configurations
-PORT = 'COM5'
+PORT = 'COM4'
 BAUDRATE = 115200
 
 def read_from_port(ser):
